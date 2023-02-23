@@ -1,8 +1,12 @@
 # whoisjson
 Json object wrapper for Mark Russinovich's Windows System Internals Whois Lookup 
-```dist/whoisjson.exe MD5 checksum 7b98172837a215e9495c4dab5de1d427```
+```
+dist/whoisjson.exe MD5 checksum 7b98172837a215e9495c4dab5de1d427
+```
 compile your own with
-```pyinstaller --onefile --name whoisjson whois.py whois_utils.py --add-binary "dsource/whois.exe;dsource" --hidden-import regex```
+```
+pyinstaller --onefile --name whoisjson whois.py whois_utils.py --add-binary "dsource/whois.exe;dsource" --hidden-import regex
+```
 
 ### Takes Domain Names Returns JSON output Example whoisjson.exe google.ca returns 
 ```
